@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		2CB40D4C195C7E1C0094066B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB40D4B195C7E1C0094066B /* AppDelegate.swift */; };
-		2CB40D4E195C7E1C0094066B /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2CB40D4D195C7E1C0094066B /* GameScene.sks */; };
 		2CB40D50195C7E1C0094066B /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB40D4F195C7E1C0094066B /* GameScene.swift */; };
 		2CB40D52195C7E1C0094066B /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB40D51195C7E1C0094066B /* GameViewController.swift */; };
 		2CB40D55195C7E1C0094066B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CB40D53195C7E1C0094066B /* Main.storyboard */; };
 		2CB40D57195C7E1C0094066B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CB40D56195C7E1C0094066B /* Images.xcassets */; };
 		2CB40D63195C7E1C0094066B /* CookieCrunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB40D62195C7E1C0094066B /* CookieCrunchTests.swift */; };
+		C280F64A195D648E00983192 /* Sprites.atlas in Resources */ = {isa = PBXBuildFile; fileRef = C280F649195D648E00983192 /* Sprites.atlas */; };
+		C280F64C195D696C00983192 /* Cookie.swift in Sources */ = {isa = PBXBuildFile; fileRef = C280F64B195D696C00983192 /* Cookie.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,7 +31,6 @@
 		2CB40D46195C7E1C0094066B /* CookieCrunch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CookieCrunch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CB40D4A195C7E1C0094066B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2CB40D4B195C7E1C0094066B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2CB40D4D195C7E1C0094066B /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		2CB40D4F195C7E1C0094066B /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		2CB40D51195C7E1C0094066B /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		2CB40D54195C7E1C0094066B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -38,6 +38,8 @@
 		2CB40D5C195C7E1C0094066B /* CookieCrunchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CookieCrunchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CB40D61195C7E1C0094066B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2CB40D62195C7E1C0094066B /* CookieCrunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookieCrunchTests.swift; sourceTree = "<group>"; };
+		C280F649195D648E00983192 /* Sprites.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Sprites.atlas; sourceTree = "<group>"; };
+		C280F64B195D696C00983192 /* Cookie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cookie.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,11 +82,12 @@
 			isa = PBXGroup;
 			children = (
 				2CB40D4B195C7E1C0094066B /* AppDelegate.swift */,
-				2CB40D4D195C7E1C0094066B /* GameScene.sks */,
+				C280F64B195D696C00983192 /* Cookie.swift */,
 				2CB40D4F195C7E1C0094066B /* GameScene.swift */,
 				2CB40D51195C7E1C0094066B /* GameViewController.swift */,
 				2CB40D53195C7E1C0094066B /* Main.storyboard */,
 				2CB40D56195C7E1C0094066B /* Images.xcassets */,
+				C280F649195D648E00983192 /* Sprites.atlas */,
 				2CB40D49195C7E1C0094066B /* Supporting Files */,
 			);
 			path = CookieCrunch;
@@ -196,7 +199,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2CB40D57195C7E1C0094066B /* Images.xcassets in Resources */,
-				2CB40D4E195C7E1C0094066B /* GameScene.sks in Resources */,
+				C280F64A195D648E00983192 /* Sprites.atlas in Resources */,
 				2CB40D55195C7E1C0094066B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -216,6 +219,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2CB40D50195C7E1C0094066B /* GameScene.swift in Sources */,
+				C280F64C195D696C00983192 /* Cookie.swift in Sources */,
 				2CB40D52195C7E1C0094066B /* GameViewController.swift in Sources */,
 				2CB40D4C195C7E1C0094066B /* AppDelegate.swift in Sources */,
 			);
@@ -405,6 +409,7 @@
 				2CB40D68195C7E1C0094066B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2CB40D69195C7E1C0094066B /* Build configuration list for PBXNativeTarget "CookieCrunchTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +418,7 @@
 				2CB40D6B195C7E1C0094066B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
