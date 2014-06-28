@@ -24,8 +24,14 @@ enum CookieType: Int {
     
     var highlightedSpriteName: String {
         let highlightedSpriteNames = [
-            
+            "Croissant-Highlighted",
+            "Cupcake-Highlighted",
+            "Danish-Highlighted",
+            "Donut-Highlighted",
+            "Macaroon-Highlighted",
+            "SugarCookie-Highlighted"
         ]
+        return highlightedSpriteNames[toRaw() - 1]
     }
 }
 
